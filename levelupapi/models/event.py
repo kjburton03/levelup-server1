@@ -9,6 +9,3 @@ class Event(models.Model):
     game = models.ForeignKey("Game", on_delete=models.CASCADE)
 
     attendees = models.ManyToManyField('Gamer', through='EventAttendees')
-
-    
-
